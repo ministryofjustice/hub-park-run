@@ -5,7 +5,7 @@ const template = require('./htmlTemplate')
 const result = Mustache.render(template, parkRunData)
 
 //create a file named suoernigel.txt:
-fs.writeFile('supernigel.html', result , function (err) {
+fs.writeFile('ParkRunResults.html', result , function (err) {
   if (err) throw err;
   console.log('Saved!');
 });

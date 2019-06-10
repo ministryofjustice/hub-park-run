@@ -7,3 +7,7 @@ The purpose of this script is to assist with scraping data from the Park run web
 ```
 npm run parkRunScript
 ```
+
+The parkrun script creates an html file in the top level of the project called **ParkRunResults.html** The result data can then be copied and pasted into the Drupul CMS.
+
+When creating the article in Drupal ensure the **source** button has been selected and the text format is set to full html.
