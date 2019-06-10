@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "parkRunScript": "cypress run & node index.js"
+  },
+  "dependencies": {
+    "mustache": "^3.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^3.3.1"
+  }
+}
