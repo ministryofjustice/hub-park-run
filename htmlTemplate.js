@@ -10,15 +10,15 @@ module.exports = `
 		</tr>
 	</thead>
 	<tbody>
-        {{#data}}
+    {{#data}}
 		<tr>
 			<td>{{pos}}</td>
 			<td>{{parkrunner}}</td>
 			<td>{{time}}</td>
 			<td>{{note}}</td>
 			<td>{{totalRuns}}</td>
-        </tr>
-        {{/data}}
+    </tr>
+    {{/data}}
 	</tbody>
 </table>
 
@@ -28,11 +28,11 @@ module.exports = `
 
 <h3>Thanks to the volunteers</h3>
 
-<p>We are very grateful to the volunteers who made this event happen: Savdeep ATTLEBOROUGH, Richard BALE, Simeon BINHAM, Darren CHALCRAFT, Ashley CLAXTON, Jon CORDWELL, Glen EASTON, Neil FOSTER, Rocky GRISTON, Tony JARROW, Steven LYNGATE, Lee SOUTHWOOD.</p>
+<p>[TEXT HERE]</p>
 
 <h2>Take part</h2>
 
 <p>To register for parkrun, or for more information, speak to gym staff who can provide application forms and answer any questions you might have.</p>
 
 <p>Family and friends can track your parkrun progress by visiting the Wayland page on the parkrun website.</p>
-`
+`;
