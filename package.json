@@ -2,9 +2,10 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "parkRunScript": "cypress run & node index.js"
+    "parkRunScript": "cypress run && node index.js"
   },
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "mustache": "^3.0.1"
   },
   "devDependencies": {

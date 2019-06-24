@@ -1,1 +1,4 @@
 node_modules
+data
+cypress/videos/
+cypress/screenshots/
