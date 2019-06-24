@@ -49,7 +49,7 @@ describe("park run scrape", function() {
         return acc.concat(result);
       }, []);
 
-      cy.get("h2").contains("Wayland");
+      cy.get("h2").contains("parkrun");
       cy.get("h2").then($el => {
         const title = $el
           .text()

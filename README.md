@@ -4,7 +4,11 @@ The purpose of this script is to assist with scraping data from the Park run web
 
 **To run the script and cypress testing use the following terminal command**
 
-`CYPRESS_URL=https://example.com/parkrun npm run parkRunScript`
+`npm run wayland`
+
+or
+
+`npm run berwyn`
 
 The parkrun script creates an html file in the top level of the project called **ParkRunResults.html** The results data can then be copied from this file and pasted into the Drupul CMS.
 
