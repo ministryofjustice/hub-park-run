@@ -28,11 +28,11 @@ module.exports = `
 
 <h3>Thanks to the volunteers</h3>
 
-<p>[TEXT HERE]</p>
+<p>{{volunteers}}</p>
 
 <h2>Take part</h2>
 
 <p>To register for parkrun, or for more information, speak to gym staff who can provide application forms and answer any questions you might have.</p>
 
-<p>Family and friends can track your parkrun progress by visiting the Wayland page on the parkrun website.</p>
+<p>Family and friends can track your parkrun progress by visiting the {{title}} page on the parkrun website.</p>
 `;
