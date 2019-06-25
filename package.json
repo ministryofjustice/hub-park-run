@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "parkRunScript": "cypress run && node index.js"
+    "cypress:open": "CYPRESS_URL=https://www.parkrun.org.uk/wayland/results/latestresults/ cypress open",
+    "wayland": "CYPRESS_URL=https://www.parkrun.org.uk/wayland/results/latestresults/ cypress run && node index.js",
+    "berwyn": "CYPRESS_URL=https://www.parkrun.org.uk/berwyn/results/latestresults/ cypress run && node index.js"
   },
   "dependencies": {
     "mkdirp": "^0.5.1",

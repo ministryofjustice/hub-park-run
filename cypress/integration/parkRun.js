@@ -49,23 +49,35 @@ describe("park run scrape", function() {
         return acc.concat(result);
       }, []);
 
-      cy.get("h2").contains("Wayland");
+      cy.get(".left > :nth-child(2)").contains('volunteers');
+      
+
+      cy.get("h2").contains("parkrun");
       cy.get("h2").then($el => {
+        const firstWord = /^[A-Za-z_]+/
         const title = $el
           .text()
           .trim()
-          .replace(/[\t\r\n]/g, "");
+          .match(firstWord);
+
+        cy.get(".left > :nth-child(2)").then($el => {
+        const volunteers = $el
+        .text()
+        
+    
         cy.writeFile(
           "data/parkRunData.json",
           JSON.stringify(
             {
               title,
-              data: results
+              data: results,
+              volunteers
             },
             null,
             2
-          )
-        );
+            )
+         );
+        });
       });
     });
   });
