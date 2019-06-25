@@ -54,14 +54,11 @@ describe("park run scrape", function() {
 
       cy.get("h2").contains("parkrun");
       cy.get("h2").then($el => {
+        const firstWord = /^[A-Za-z_]+/
         const title = $el
           .text()
           .trim()
-          .match(/^[A-Za-z_]+/); //regex solution
-
-          //spilt and index solution
-        //   .split(" ")
-        //   [0];
+          .match(firstWord);
 
         cy.get(".left > :nth-child(2)").then($el => {
         const volunteers = $el
